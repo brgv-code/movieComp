@@ -10,7 +10,7 @@
      return movie.Title;
    },
    async fetchData(searchTerm)  {
-     const response = await axios.get('https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/', {
+     const response = await axios.get('https://www.omdbapi.com/', {
        params: {
          apikey: 'd9835cc5',
          s: searchTerm
@@ -44,7 +44,7 @@
   });
 
 const onMovieSelect = async (movie, summaryElement,side) => {
-  const response = await axios.get('https://cors-anywhere.herokuapp.com/http://www.omdbapi.com/', {
+  const response = await axios.get('https://www.omdbapi.com/', {
     params: {
       apikey: 'd9835cc5',
       i: movie.imdbID
